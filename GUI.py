@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue May 28 01:12:58 2024
-
+Author:  Dr. Thu Huynh Van, Assoc. Prof. Cao Hung Pham
+#   Emails:  thuxd11@gmail.com, caohung.pham@sydney.edu.au
+#            School of Civil Engineering, The University of Sydney, NSW 2006, Australia
 @author: oxnh0
 """
 
