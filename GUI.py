@@ -6,7 +6,6 @@ Author:  Dr. Thu Huynh Van, Assoc. Prof. Cao Hung Pham
 #            School of Civil Engineering, The University of Sydney, NSW 2006, Australia
 @author: oxnh0
 """
-
 import pandas as pd
 import numpy as np
 import pickle
@@ -35,17 +34,7 @@ layout = [
                 [sg.Text('Shear distance, s (mm)', size=(38, 1)), sg.Input(key='-FY-', size=(10, 1), enable_events=True)],
                 [sg.Text('Edge distance, e2 (mm)', size=(38, 1)), sg.Input(key='-FO-', size=(10, 1), enable_events=True)]],
             title='Input parameters')], ], justification='left'),
-        # sg.Column(layout=[
-            # [sg.Frame(layout=[
-                # [sg.Text('t = [1.2, 1.5] (mm)')],
-                # [sg.Text('dh = 9mm for M8-bolts and 14mm for M12-bolts')],
-                # [sg.Text('e1 = 20mm for M8-bolts and 25mm for M12-bolts')],
-                # [sg.Text('20mm ≤ s ≤ 50mm')],
-                # [sg.Text('15mm ≤ e2 ≤ 30mm')]],                  
-            # title='Range of applications of the model')],             
-         # ], justification='center')
     ],
-    # [sg.Text('Note: Range of input variables were provided in paper')],
     [sg.Button('Predict'), sg.Button('Cancel')],
     [sg.Frame(layout=[
     [sg.Text('Shear strength, P (kN)'), sg.Input(key='-FP-', size=(30, 1), enable_events=True)]],title='Output')]]
@@ -80,12 +69,8 @@ layout += [
     [sg.Text('')],
     [sg.Column([[sg.Text('Authors: Dr. Van Thu Huynh' + '\n'
              '             Assoc. Prof. Cao Hung Pham' + '\n'
-             #'             ' + '\n'
              '             The University of Sydney')],
     [sg.Column([[fig4]], element_justification='right')],
-    # [sg.Button('Email: thuxd11@gmail.com', key='email', button_color=('white', 'gray'))],
-     # sg.Button('caohung.pham@sydney.edu.au', key='email', button_color=('white', 'gray')),
-     # ]
     ],element_justification='center'), sg.Column([[fig2, fig3],], element_justification='right')],]
 window = sg.Window('Strength of shear beam-end bolted connections in CFS channel', layout)
 predictions_made = False
